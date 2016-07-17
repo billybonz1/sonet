@@ -12,8 +12,15 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
-	// fancybox
-	$("a.modal").fancybox();
+
+		$('.main-slider ul').lightSlider({
+			adaptiveHeight:true,
+			item:1,
+			slideMargin:0,
+			loop:true,
+			pager: false
+		});
+
 });
 
 //Форма отправки 2.0

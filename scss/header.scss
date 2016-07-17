@@ -1,15 +1,9 @@
 @import "bourbon";
 @import "vars.scss";
 
-body{
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
-	overflow-x: hidden;
-	background-color: #fff;
-}
+
+
+
 
 a,button,input,textarea{
 	text-decoration: none;
@@ -30,10 +24,4 @@ button{
 
 .hidden{
 	display: none;
-}
-
-.wrapper{
-	width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
 }

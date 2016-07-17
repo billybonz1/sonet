@@ -32,16 +32,18 @@
 	<!-- FONTS+HEADER -->
 	<style></style>
 
+
+
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="libs/lightslider/dist/css/lightslider.min.css">
 	<!-- Load CSS Start -->
 	<!-- <script>loadCSS( "css/fonts.css?ver=1.0.0", false, "all" );</script> -->
 	<!-- <script>loadCSS( "css/header.css?ver=1.0.0", false, "all" );</script> -->
 	<script>loadCSS( "css/main.css?ver=1.0.0", false, "all" );</script>
-	<script>loadCSS( "libs/fancyBox/jquery.fancybox.css?ver=1.0.0", false, "all" );</script>
 	<!-- Load CSS End -->
 
 	<!-- Load CSS Compiled without JS -->
@@ -53,20 +55,247 @@
 </head>
 
 <body>
+	<div class="top-line"></div>
+	<header>
+		<div class="inner">
+			<a href="/" class="logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="header-contacts">
 
-	<header></header>
+				<div class="header-contacts__i">
+					<div class="header-contacts__text">Подключение услуг:</div>
+					<a href="tel:0(3652)788-031" class="header-contacts__phone">
+						<span>0 (3652)</span> 788-031
+					</a>
+				</div>
 
-	<footer>
-		<div class="wrapper">
+				<div class="header-contacts__i">
+					<div class="header-contacts__text">Техническая поддержка:</div>
+					<a href="tel:0(3652)788-031" class="header-contacts__phone">
+						<span>0 (3652)</span> 788-031
+					</a>
+				</div>
+				<a href="" class="order-call">
+					<i class="icon-order-call icon"></i>
+					<span>Заказать звонок</span>
+				</a>
+			</div>
+			<div class="header-address">
+				Крым, Симферополь
+				295011, ул. Самокиша, 16
+			</div>
+		</div>
+	</header>
+
+	
+	<div class="top-menu">
+		<div class="inner">
 			<ul>
-				<li><a class="modal" data-fancybox-type="iframe" href="doc/1.html">Политика конфиденциальности</a></li>
-				<li><a class="modal" data-fancybox-type="iframe" href="doc/2.html">Отказ от ответственности</a></li>
-				<li><a class="modal" data-fancybox-type="iframe" href="doc/3.html">Согласие с рассылкой</a></li>
+				<li><a href="">Интернет</a></li>
+				<li><a href="">Цифровое ТВ</a></li>
+				<li><a href="">Телефония</a></li>
+				<li><a href="">Подключение</a></li>
+				<li><a href="">Абонентам</a></li>
+				<li><a href="">О компании</a></li>
+				<li><a href="">Контакты</a></li>
 			</ul>
-			<a href="http://geniusstudio.me/" target="_blank" class="gs"><img src="img/footer/logo.png" alt="logo"></a>
+		</div>
+	</div>
+	<div class="main-slider">
+		<div class="inner">
+			<ul class="gallery content-slider list-unstyled clearfix">
+				<li>
+					<a href=""><img src="img/slide1.png" alt=""></a>
+				</li>
+				<li>
+					<a href=""><img src="img/slide1.png" alt=""></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="advantages">
+		<div class="inner">
+			<a href="" class="advantages__item">
+				<div class="advantages__item__img">
+					<img src="img/icon1.png" alt="">
+				</div>
+				<span>Акции</span>
+			</a>
+			<a href="" class="advantages__item">
+				<div class="advantages__item__img">
+					<img src="img/icon2.png" alt="">
+				</div>
+				<span>Способы оплаты</span>
+			</a>
+			<a href="" class="advantages__item">
+				<div class="advantages__item__img">
+					<img src="img/icon3.png" alt="">
+				</div>
+				<span>Форум</span>
+			</a>
+			<a href="" class="advantages__item">
+				<div class="advantages__item__img">
+					<img src="img/icon4.png" alt="">
+				</div>
+				<span>Услуги</span>
+			</a>
+			<a href="" class="advantages__item">
+				<div class="advantages__item__img">
+					<img src="img/icon5.png" alt="">
+				</div>
+				<span>Triple Play</span>
+			</a>
+		</div>
+	</div>
+	<section class="section_grey">
+		<div class="inner">
+			<div class="news">
+				<div class="news__title">
+					<h3>Общие новости</h3>
+					<a href="" class="news-all">Все новости</a>
+				</div>
+				<div class="news__container">
+					<a class="news__item" href="">
+						<div class="news__img">
+							<img src="img/photo1.png" alt="">
+						</div>
+						<div class="news__text">
+							<h4>Понижение тарифов в домах 4 этажа и выше</h4>
+							<div class="date">13 апреля, 2016</div>
+						</div>
+					</a>
+					<a class="news__item" href="">
+						<div class="news__img">
+							<img src="img/photo2.png" alt="">
+						</div>
+						<div class="news__text">
+							<h4>Понижение тарифов в домах 4 этажа и выше</h4>
+							<div class="date">13 апреля, 2016</div>
+						</div>
+					</a>
+					<a class="news__item" href="">
+						<div class="news__img">
+							<img src="img/photo3.png" alt="">
+						</div>
+						<div class="news__text">
+							<h4>Понижение тарифов в домах 4 этажа и выше</h4>
+							<div class="date">13 апреля, 2016</div>
+						</div>
+					</a>
+					<a class="news__item" href="">
+						<div class="news__img">
+							<img src="img/photo4.png" alt="">
+						</div>
+						<div class="news__text">
+							<h4>Понижение тарифов в домах 4 этажа и выше</h4>
+							<div class="date">13 апреля, 2016</div>
+						</div>
+					</a>
+					<a class="news__item" href="">
+						<div class="news__img">
+							<img src="img/photo5.png" alt="">
+						</div>
+						<div class="news__text">
+							<h4>Понижение тарифов в домах 4 этажа и выше</h4>
+							<div class="date">13 апреля, 2016</div>
+						</div>
+					</a>
+					<a class="news__item" href="">
+						<div class="news__img">
+							<img src="img/photo6.png" alt="">
+						</div>
+						<div class="news__text">
+							<h4>Понижение тарифов в домах 4 этажа и выше</h4>
+							<div class="date">13 апреля, 2016</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="family">
+				<img src="img/family.png" alt="">
+			</div>
+			<div class="onmap">
+				<h3>Карта покрытия</h3>
+				<p>
+					Есть ли ваша улица в зоне покрытия? Введите:
+				</p>
+				<form action="">
+					<input type="text" class="onmap-input onmap-input_street" name="street">
+					<input type="text" class="onmap-input onmap-input_flat" name="flat">
+					<button>Искать</button>
+				</form>
+				<a href="#" class="connect">Подключиться</a>
+				<div class="onmap-bottom-text">
+					Выделенная линия по вопросам подключения
+					<strong>(3652) 788-031</strong>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="inner">
+			<div class="footer-block footer-contacts">
+				<h3>Контакты</h3>
+				<div class="header-contacts">
+					<div class="header-contacts__i">
+						<div class="header-contacts__text">Подключение услуг:</div>
+						<a href="tel:0(3652)788-031" class="header-contacts__phone">
+							<span>0 (3652)</span> 788-031
+						</a>
+					</div>
+					<div class="header-contacts__i">
+						<div class="header-contacts__text">Техническая поддержка:</div>
+						<a href="tel:0(3652)788-031" class="header-contacts__phone">
+							<span>0 (3652)</span> 788-031
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer-block">
+				<h3>Услуги</h3>
+				<ul>
+					<li><a href="">Интернет</a></li>
+					<li><a href="">Телевидение</a></li>
+					<li><a href="">Телефония</a></li>
+					<li><a href="">Дополнительные услуги</a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<h3>О компании</h3>
+				<ul>
+					<li><a href="">Наши преимущества</a></li>
+					<li><a href="">Лицензии</a></li>
+					<li><a href="">Партнеры</a></li>
+					<li><a href="">Вакансии</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="">Контактная информация</a></li>
+				</ul>
+			</div>
+			<div class="footer-block footer-abonents">
+				<h3>Абонентам</h3>
+				<ul>
+					<li><a href="">Правила пользования</a></li>
+					<li><a href="">Настройка сети</a></li>
+					<li><a href="">Тарифы на сервисные услуги</a></li>
+					<li><a href="">Дополнительные услуги</a></li>
+					<li><a href="">Способ оплаты</a></li>
+				</ul>
+			</div>
+			<div class="footer-block footer-aboutus">
+				<h3>О нас</h3>
+				<p>
+					Современную жизнь трудно представить без средств телекоммуникации. На сегодняшний день самые востребованные услуги - мобильная связь и доступ к сети Интернет.
+					<a href="">подробнее</a>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="copyright">
+				©Sonet 2005-2016. Интернет провайдер
+			</div>
 		</div>
 	</footer>
-
 	<div class="hidden">
 		<div id="modal_callback_ok">
 			<h3>Спасибо!</h3>
